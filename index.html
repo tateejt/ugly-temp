@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>U.G.L.Y</title>
+  </head>
+  <body>
+
+    <div class="nav-container">
+      <header>
+        <div class="topnav">
+          <p class="title">U.G.L.Y</p>
+          <p class="subtitle">U Gotta Love Yourself</p>
+
+          <nav class="nav">
+            <div id="myLinks">
+              <ul class="nav-list">
+                <li class="nav-item"><a href="#">Products</a></li>
+                <li class="nav-item"><a href="#">About Us</a></li>
+                <li class="nav-item"><a href="#">Contact Us</a></li>
+                <li class="nav-item"><a href="#">
+                  <svg width="23" height="23" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M29.34 18.8324L31.9663 5.83244C32.1559 4.89381 31.5217 4 30.6661 4H8.84489L8.33567 1.19938C8.20878 0.501313 7.66278 0 7.02939 0H1.33333C0.596945 0 0 0.671562 0 1.5V2.5C0 3.32844 0.596945 4 1.33333 4H5.21572L9.11839 25.4647C8.18472 26.0688 7.55556 27.2014 7.55556 28.5C7.55556 30.433 8.94845 32 10.6667 32C12.3849 32 13.7778 30.433 13.7778 28.5C13.7778 27.5204 13.4196 26.6353 12.8431 26H24.4902C23.9137 26.6353 23.5556 27.5204 23.5556 28.5C23.5556 30.433 24.9485 32 26.6667 32C28.3849 32 29.7778 30.433 29.7778 28.5C29.7778 27.1143 29.0618 25.9167 28.0234 25.3497L28.3299 23.8324C28.5195 22.8938 27.8853 22 27.0297 22H12.1176L11.754 20H28.0398C28.6624 20 29.2021 19.5154 29.34 18.8324Z" fill="black"/>
+                  </svg></a></li>
+              </ul>
+            </div>
+          </nav>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </header>
+    </div>
+
+    <section class="main-info">
+      <div class="home-design">
+        <svg width="1309" height="969" viewBox="0 0 1309 969" fill="none" class="svg-icons" xmlns="http://www.w3.org/2000/svg">
+          <path d="M60.25 425.292L169 362.505C195.333 347.302 228.25 366.306 228.25 396.713L228.25 522.287C228.25 552.694 195.333 571.698 169 556.495L60.25 493.708C33.9167 478.504 33.9167 440.496 60.25 425.292Z" fill="#F2E5CC" stroke="#FEFEFE"/>
+          <path d="M1248.75 493.708L1140 556.495C1113.67 571.698 1080.75 552.694 1080.75 522.287V396.713C1080.75 366.306 1113.67 347.302 1140 362.505L1248.75 425.292C1275.08 440.496 1275.08 478.504 1248.75 493.708Z" fill="#F2E5CC" stroke="#FEFEFE"/>
+        </svg>
+        <p class="coming-soon">Coming Soon...</p>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <section class="footer">
+      <div class="copyright">
+        <p>&copy Designed and Developed by Emery Tate</p>
+      </div>
+    </section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
+    $(document).ready(function(){
+      $(window).scroll(function(){
+      	var scroll = $(window).scrollTop();
+    	  if (scroll > 30) {
+    	    $(".topnav").css("opacity" , ".9");
+    	  }
+
+    	  else{
+    		  $(".topnav").css("opacity" , "1");
+    	  }
+      })
+    })
+    </script>
+  </body>
+
+</html>
